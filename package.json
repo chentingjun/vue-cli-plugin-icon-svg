@@ -1,5 +1,5 @@
 {
-  "name": "vue-cli-plugin-svgicon",
+  "name": "@ctj/vue-cli-plugin-svg-icon",
   "version": "1.0.0",
   "description": "vue-cli plugin svg vue svg-icon",
   "main": "index.js",
@@ -19,10 +19,10 @@
   "dependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chentingjun/vue-cli-plugin-svgicon.git"
+    "url": "git+https://github.com/chentingjun/ctj-vue-cli-plugin-svg-icon.git"
   },
   "bugs": {
-    "url": "https://github.com/chentingjun/vue-cli-plugin-svgicon/issues"
+    "url": "https://github.com/chentingjun/ctj-vue-cli-plugin-svg-icon/issues"
   },
-  "homepage": "https://github.com/chentingjun/vue-cli-plugin-svgicon#readme"
+  "homepage": "https://github.com/chentingjun/ctj-vue-cli-plugin-svg-icon#readme"
 }
