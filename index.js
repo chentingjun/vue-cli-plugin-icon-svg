@@ -1,7 +1,6 @@
 const path = require('path')
 
 module.exports = (api, projectOptions) => {
-  console.log('projectOptions ====> ', projectOptions)
   const {
     svgPath = './src',
     symbolId = 'icon-[name]'
