@@ -1,5 +1,6 @@
 {
   "name": "@chentingjun/vue-cli-plugin-svg-icon",
+  "private": true,
   "version": "1.0.0",
   "description": "vue-cli plugin svg vue svg-icon",
   "main": "index.js",
