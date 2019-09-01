@@ -18,3 +18,10 @@ module.exports = {
   }
 }
 ```
+## symbolId
+
+```
+<svg>
+  <use :xlink:href="`#${symbolId}`"/>
+</svg>
+``
