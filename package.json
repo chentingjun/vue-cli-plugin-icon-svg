@@ -12,5 +12,8 @@
     "vue-cli"
   ],
   "author": "chentingjun",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "svg-sprite-loader": "^4.1.6"
+  }
 }
