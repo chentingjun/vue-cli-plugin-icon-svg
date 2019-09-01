@@ -1,12 +1,9 @@
 const path = require('path')
 
-// 相对路径
-const svgDefaultPath = './src'
-
 module.exports = (api, projectOptions) => {
   console.log('projectOptions ====> ', projectOptions)
   const {
-    svgPath = svgDefaultPath,
+    svgPath = './src',
     symbolId = 'icon-[name]'
   } = projectOptions.pluginOptions
   api.chainWebpack(webpackConfig => {

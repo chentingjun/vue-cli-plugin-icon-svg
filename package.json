@@ -15,5 +15,14 @@
   "license": "ISC",
   "devDependencies": {
     "svg-sprite-loader": "^4.1.6"
-  }
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chentingjun/vue-cli-plugin-svg.git"
+  },
+  "bugs": {
+    "url": "https://github.com/chentingjun/vue-cli-plugin-svg/issues"
+  },
+  "homepage": "https://github.com/chentingjun/vue-cli-plugin-svg#readme"
 }
