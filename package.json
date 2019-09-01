@@ -1,7 +1,7 @@
 {
-  "name": "vue-cli-plugin-svg",
+  "name": "vue-cli-plugin-svg-icon",
   "version": "1.0.0",
-  "description": "vue-cli plugin svg vue",
+  "description": "vue-cli plugin svg vue svg-icon",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
