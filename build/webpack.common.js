@@ -2,17 +2,21 @@ const path = require('path');
 
 // 处理 vue 文件
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
-// 清除文件
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 const distPath = path.resolve(__dirname, '../lib')
 
 module.exports = {
   mode: 'production',
-  entry: './packages/svg-icon',
+  entry: {
+    index: './packages/index'
+  },
   output: {
     path: distPath,
-    filename: 'svg-icon.js',
+    filename: '[name].js',
+    // 打包方式 改为 module.exports =
+    libraryExport: 'default',
+    library: 'index',
+    libraryTarget: 'commonjs2'
   },
   module: {
     rules: [
@@ -28,18 +32,21 @@ module.exports = {
         test: /\.scss$/,
         use: [
           {
-            loader: 'css-loader',
+            loader: 'css-loader'
           },
           {
-            loader: 'sass-loader',
+            loader: 'sass-loader'
           }
-        ],
+        ]
       }
     ]
   },
   plugins: [
-    new CleanWebpackPlugin(),
     // 请确保引入这个插件！
     new VueLoaderPlugin()
-  ]
+  ],
+  optimization: {
+    // 不压缩才能被使用成功 -- 否则会被 eslint 报错
+    minimize: false
+  }
 }

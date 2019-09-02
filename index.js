@@ -1,10 +1,9 @@
 const path = require('path')
 
-module.exports = (api, projectOptions) => {
-  const {
-    svgPath = './src',
-    symbolId = 'icon-[name]'
-  } = projectOptions.pluginOptions
+module.exports = (api, projectOptions = { pluginOptions: {} }) => {
+  const { pluginOptions = {} } = projectOptions
+  const { svgPath = './src', symbolId = 'icon-[name]' } = pluginOptions || {}
+
   api.chainWebpack(webpackConfig => {
     // 通过 webpack-chain 修改 webpack 配置
     const svgRule = webpackConfig.module.rule('svg') // 找到svg-loader
