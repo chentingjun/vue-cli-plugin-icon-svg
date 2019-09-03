@@ -14,6 +14,7 @@ module.exports = {
     path: distPath,
     filename: '[name].js',
     // 打包方式 改为 module.exports =
+    libraryExport: 'default',
     libraryTarget: 'commonjs2'
   },
   module: {
