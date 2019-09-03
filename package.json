@@ -45,6 +45,7 @@
   },
   "files": [
     "lib",
+    "plugins",
     "packages"
   ],
   "homepage": "https://github.com/chentingjun/vue-cli-plugin-icon-svg#readme"

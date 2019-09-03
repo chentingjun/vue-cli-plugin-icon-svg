@@ -1,7 +1,8 @@
 # vue-plugin-svg
 
-## in vue.config.js
-
+## 安装包 npm i vue-cli-plugin-icon-svg
+### vue.config.js
+* 代码
 ```
 module.exports = {
   pluginOptions: {
@@ -18,10 +19,23 @@ module.exports = {
   }
 }
 ```
-## symbolId
+* symbolId
 
 ```
 <svg>
   <use :xlink:href="`#${symbolId}`"/>
 </svg>
-``
+```
+
+## 引入 svg 组件
+```
+import { svgIcon } from 'vue-cli-plugin-icon-svg/lib'
+
+Vue.use(svgIcon)
+```
+## 引入 svg 文件目录 svgPath [默认为 ./src ]
+```
+import importSvg from 'vue-cli-plugin-icon-svg/plugins'
+
+importSvg(svgPath)
+```
