@@ -1,6 +1,6 @@
 {
   "name": "vue-cli-plugin-icon-svg",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "vue-cli plugin svg vue svg-icon",
   "main": "index.js",
   "scripts": {
