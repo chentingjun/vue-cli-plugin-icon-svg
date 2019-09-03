@@ -18,6 +18,9 @@ module.exports = {
     // 打包方式 改为 module.exports =
     libraryTarget: 'commonjs2'
   },
+  optimization: {
+    minimize: false
+  },
   module: {
     rules: [
       {
@@ -44,9 +47,5 @@ module.exports = {
   plugins: [
     // 请确保引入这个插件！
     new VueLoaderPlugin()
-  ],
-  optimization: {
-    // 不压缩才能被使用成功 -- 否则会被 eslint 报错
-    minimize: false
-  }
+  ]
 }

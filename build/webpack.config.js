@@ -1,14 +1,14 @@
-const path = require('path');
+const path = require('path')
 
 // 处理 vue 文件
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 
-const distPath = path.resolve(__dirname, '../lib')
+const distPath = path.resolve(__dirname, '../')
 
 module.exports = {
   mode: 'production',
   entry: {
-    common: './packages/index'
+    main: './index'
   },
   output: {
     path: distPath,
