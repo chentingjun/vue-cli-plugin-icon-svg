@@ -8,7 +8,7 @@ const distPath = path.resolve(__dirname, '../lib')
 module.exports = {
   mode: 'production',
   entry: {
-    common: './packages/index'
+    index: './packages/index'
   },
   output: {
     path: distPath,

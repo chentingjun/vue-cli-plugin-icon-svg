@@ -27,4 +27,11 @@ module.exports = (api, projectOptions = { pluginOptions: {} }) => {
   api.registerCommand('test', args => {
     // 注册 `vue-cli-service test`
   })
+
+  const requireIcons = () => {
+    const requireAll = requireContext => requireContext.keys().map(requireContext)
+    const req = require.context(svgPath, false, /\.svg$/)
+    requireAll(req)
+  }
+  return requireIcons
 }
